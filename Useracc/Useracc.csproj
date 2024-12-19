@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75C6AEB8-CFB4-4EDE-B100-D105701095F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Useracc</RootNamespace>
+    <AssemblyName>Useracc</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cart.Designer.cs">
+      <DependentUpon>cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fruit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fruit.Designer.cs">
+      <DependentUpon>fruit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="milktea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="milktea.Designer.cs">
+      <DependentUpon>milktea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nontea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nontea.Designer.cs">
+      <DependentUpon>nontea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order details.Designer.cs">
+      <DependentUpon>Order details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order received.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order received.Designer.cs">
+      <DependentUpon>Order received.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order Summary.Designer.cs">
+      <DependentUpon>Order Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cart.resx">
+      <DependentUpon>cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit.resx">
+      <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fruit.resx">
+      <DependentUpon>fruit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="milktea.resx">
+      <DependentUpon>milktea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nontea.resx">
+      <DependentUpon>nontea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order details.resx">
+      <DependentUpon>Order details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order received.resx">
+      <DependentUpon>Order received.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order Summary.resx">
+      <DependentUpon>Order Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carto.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
